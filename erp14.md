@@ -143,14 +143,14 @@ bench start
 ```
 **STEP 14** `create a site in frappe bench`
 ```
-bench new-site dcode.com
-bench use dcode.com
+bench new-site sitename
+bench use sitename
 ```
 
 **STEP 15** `install ERPNext latest version in bench & site`
 ```
 bench get-app https://github.com/frappe/erpnext --branch version-14
-bench --site dcode.com install-app erpnext
+bench --site sitename install-app erpnext
 bench start
 ```
 **Step 16** `setup production`
@@ -165,7 +165,7 @@ sudo bench setup production $USER
 ```
 if js and css file is not loading on login window run the following command
 ```
-sudo chmod o+x /home/dcode-frappe
+sudo chmod o+x /home/$USER
 ```
 ```
 bench restart
