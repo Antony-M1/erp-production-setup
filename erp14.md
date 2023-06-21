@@ -39,29 +39,41 @@ sudo mysql_secure_installation
 
   
   Enabled successfully!
-  Reloading privilege tables..
-   ... Success!
+  Reloading privilege tables
+  
+  ... Success!
   Change the root password? [Y/n] Y
+  
   New password: 
+  
   Re-enter new password: 
+  
   Password updated successfully!
+  
   Reloading privilege tables..
+  
    ... Success!
    
   Remove anonymous users? [Y/n] Y
+  
    ... Success!
    
    Disallow root login remotely? [Y/n] Y
+   
    ... Success!
    
    Remove test database and access to it? [Y/n] Y
+   
     Dropping test database...
+    
    ... Success!
    
     Removing privileges on test database...
+    
    ... Success!
    
    Reload privilege tables now? [Y/n] Y
+   
    ... Success
    
 **STEP 6** `MySQL database development files`
@@ -175,4 +187,16 @@ sudo chmod o+x /home/$USER
 ```
 bench restart
 ```
-#STOP Production Mode
+# STOP Production Mode
+* [How to stop production setup?](https://discuss.frappe.io/t/how-to-stop-production-setup/106204)
+```
+sudo service nginx stop
+sudo service supervisord stop
+bench setup procfile
+bench start
+```
+# Update the latest code 
+No need to stop the server `git pull` the latest code and `migrate`
+```
+bench migrate
+```
