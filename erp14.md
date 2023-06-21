@@ -200,3 +200,6 @@ No need to stop the server `git pull` the latest code and `migrate`
 ```
 bench migrate
 ```
+```
+bench restart
+```
