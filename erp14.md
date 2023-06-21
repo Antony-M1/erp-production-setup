@@ -36,6 +36,7 @@ sudo mysql_secure_installation
   Enter current password for root (enter for none): # PRESS ENTER
   OK, successfully used password, moving on...
   `Switch to unix_socket authentication` [Y/n] Y
+
   
   Enabled successfully!
   Reloading privilege tables..
@@ -46,15 +47,20 @@ sudo mysql_secure_installation
   Password updated successfully!
   Reloading privilege tables..
    ... Success!
+   
   Remove anonymous users? [Y/n] Y
    ... Success!
+   
    Disallow root login remotely? [Y/n] Y
    ... Success!
+   
    Remove test database and access to it? [Y/n] Y
     Dropping test database...
    ... Success!
+   
     Removing privileges on test database...
    ... Success!
+   
    Reload privilege tables now? [Y/n] Y
    ... Success
    
@@ -70,7 +76,6 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
 [mysql]
 default-character-set = utf8mb4
-Now press (Ctrl-X) to exit
 
 [mysqld]
 character-set-client-handshake = FALSE
