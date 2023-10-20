@@ -169,11 +169,18 @@ Start the bench
 bench start
 ```
 **STEP 14** `create a site in frappe bench`
+
+Note: Open one more terminal and move to `frappe-bench` folder and run the upcoming commands
+
 Username: `Administrator`
+
 Password: `admin`
 
+
 DB User: `root`
+
 DB Password: `123`
+
 
 But while running the below commands you can change the admin and Db password as your wish don't follow this one use some more secure password and take notes
 
