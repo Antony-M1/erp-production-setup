@@ -156,12 +156,36 @@ bench --version
 ```
 bench init frappe-bench --frappe-branch version-14
 cd frappe-bench/
+```
+After move into the `frappe-bench` run this commands
+```
+bench set-config -g db_host mariadb
+bench set-config -g redis_cache redis://redis-cache:6379
+bench set-config -g redis_queue redis://redis-queue:6379
+bench set-config -g redis_socketio redis://redis-socketio:6379
+```
+Start the bench
+```
 bench start
 ```
 **STEP 14** `create a site in frappe bench`
+Username: `Administrator`
+Password: `admin`
+
+DB User: `root`
+DB Password: `123`
+
+But while running the below commands you can change the admin and Db password as your wish don't follow this one use some more secure password and take notes
+
+`SITE_NAME` example --> `erpnext.com`, `example.com` this only example you can give any domain you have if you don't have domain you can create like this `erp.localhost` but you can't access through this domain `erp.localhost` but you can use the `IP Address` instead.
 ```
-bench new-site sitename
-bench use sitename
+bench new-site <SITE_NAME> --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+```
+
+
+Tell the bech to use this site as a current site
+```
+bench use <SITE_NAME>
 ```
 
 **STEP 15** `install ERPNext latest version in bench & site`
