@@ -1,6 +1,7 @@
 # Reference Document
 * [[Guide] How to install ERPNext v14 on Linux Ubuntu (step-by-step instructions)](https://discuss.frappe.io/t/guide-how-to-install-erpnext-v14-on-linux-ubuntu-step-by-step-instructions/92960/226)
 * [Frappe-ERPNext-Version-14--in-Ubuntu-22.04-LTS](https://github.com/D-codE-Hub/Frappe-ERPNext-Version-14--in-Ubuntu-22.04-LTS)
+* [[Guide] How to install ERPNext v15 on Linux Ubuntu (step-by-step instructions)](https://discuss.frappe.io/t/guide-how-to-install-erpnext-v15-on-linux-ubuntu-step-by-step-instructions/111706)
 
 
 # Get Started
